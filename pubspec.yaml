@@ -5,8 +5,7 @@ author: James Naylor <jamesnaylor85@gmail.com>
 homepage: https://www.github.com/euronay/cryptocoins-icons-flutter
 
 environment:
-  sdk: '>=1.19.0 <2.0.0'
-  flutter: '>=0.1.2'
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
