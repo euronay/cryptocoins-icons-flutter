@@ -173,8 +173,8 @@ class CryptoCoinIcons {
     return _cryptoMap.containsKey(name);
   }
 
-  static const IconData ADA_alt = const CryptoCoinIconData(0xE001);
-  static const IconData ADA = const CryptoCoinIconData(0xE002);
+  static const IconData ADA = const CryptoCoinIconData(0xE001);
+  static const IconData ADA_alt = const CryptoCoinIconData(0xE002);
   static const IconData ADC_alt = const CryptoCoinIconData(0xE003);
   static const IconData ADC = const CryptoCoinIconData(0xE004);
   static const IconData AEON_alt = const CryptoCoinIconData(0xE005);
@@ -416,8 +416,8 @@ class CryptoCoinIcons {
   static const IconData UBQ = const CryptoCoinIconData(0xE0F1);
   static const IconData UNITY_alt = const CryptoCoinIconData(0xE0F2);
   static const IconData UNITY = const CryptoCoinIconData(0xE0F3);
-  static const IconData USDT_alt = const CryptoCoinIconData(0xE0F4);
-  static const IconData USDT = const CryptoCoinIconData(0xE0F5);
+  static const IconData USDT = const CryptoCoinIconData(0xE0F4);
+  static const IconData USDT_alt = const CryptoCoinIconData(0xE0F5);
   static const IconData VIOR_alt = const CryptoCoinIconData(0xE0F6);
   static const IconData VIOR = const CryptoCoinIconData(0xE0F7);
   static const IconData VNL_alt = const CryptoCoinIconData(0xE0F8);
