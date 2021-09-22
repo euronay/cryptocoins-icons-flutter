@@ -7,16 +7,16 @@ Original project at [AllienWorks/cryptocoin](https://github.com/AllienWorks/cryp
 
 ## Installation
 
-In the `dependencies:` section of your `pubspec.yaml`, add the following line:
-
-```yaml
-  cryptocoins_icons: 0.3.0
+```shell
+flutter pub add cryptocoins_icons
 ```
 
+## Usage
 
 ```dart
 import 'package:cryptocoins_icons/cryptocoins_icons.dart';
-
+```
+```dart
 class BtcIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<String> cryptoList = CryptoCoinIcons.getCryptoNames();
@@ -75,3 +75,4 @@ class BtcIconButton extends StatelessWidget {
     }
   }
 }
+```
