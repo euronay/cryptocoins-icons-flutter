@@ -4,9 +4,177 @@ import 'package:flutter/widgets.dart';
 import 'package:cryptocoins_icons/cryptocoinicondata.dart';
 
 class CryptoCoinIcons {
+  static Map<String, List<IconData>> _cryptoMap = {
+    'ADA': [ADA, ADA_alt],
+    'ADC': [ADC, ADC_alt],
+    'AEON': [AEON, AEON_alt],
+    'AMP': [AMP, AMP_alt],
+    'ANC': [ANC, ANC_alt],
+    'ARCH': [ARCH, ARCH_alt],
+    'ARDR': [ARDR, ARDR_alt],
+    'ARK': [ARK, ARK_alt],
+    'AUR': [AUR, AUR_alt],
+    'BANX': [BANX, BANX_alt],
+    'BAT': [BAT, BAT_alt],
+    'BAY': [BAY, BAY_alt],
+    'BC': [BC, BC_alt],
+    'BCH': [BCH, BCH_alt],
+    'BCN': [BCN, BCN_alt],
+    'BFT': [BFT, BFT_alt],
+    'BRK': [BRK, BRK_alt],
+    'BRX': [BRX, BRX_alt],
+    'BSD': [BSD, BSD_alt],
+    'BTA': [BTA, BTA],
+    'BTC': [BTC, BTC_alt],
+    'BTCD': [BTCD, BTCD_alt],
+    'BTM': [BTM, BTM_alt],
+    'BTS': [BTS, BTS_alt],
+    'CLAM': [CLAM, CLAM_alt],
+    'CLOAK': [CLOAK, CLOAK_alt],
+    'DAO': [DAO, DAO_alt],
+    'DASH': [DASH, DASH_alt],
+    'DCR': [DCR, DCR_alt],
+    'DCT': [DCT, DCT_alt],
+    'DGB': [DGB, DGB_alt],
+    'DGD': [DGD, DGD],
+    'DGX': [DGX, DGX],
+    'DMD': [DMD, DMD_alt],
+    'DOGE': [DOGE, DOGE_alt],
+    'EMC': [EMC, EMC_alt],
+    'EOS': [EOS, EOS_alt],
+    'ERC': [ERC, ERC_alt],
+    'ETC': [ETC, ETC_alt],
+    'ETH': [ETH, ETH_alt],
+    'FC2': [FC2, FC2_alt],
+    'FCT': [FCT, FCT_alt],
+    'FLO': [FLO, FLO_alt],
+    'FRK': [FRK, FRK_alt],
+    'FTC': [FTC, FTC_alt],
+    'GAME': [GAME, GAME_alt],
+    'GBYTE': [GBYTE, GBYTE_alt],
+    'GDC': [GDC, GDC_alt],
+    'GEMZ': [GEMZ, GEMZ_alt],
+    'GLD': [GLD, GLD_alt],
+    'GNO': [GNO, GNO_alt],
+    'GNT': [GNT, GNT_alt],
+    'GOLOS': [GOLOS, GOLOS_alt],
+    'GRC': [GRC, GRC_alt],
+    'GRS': [GRS, GRS],
+    'HEAT': [HEAT, HEAT_alt],
+    'ICN': [ICN, ICN_alt],
+    'IFC': [IFC, IFC_alt],
+    'INCNT': [INCNT, INCNT_alt],
+    'IOC': [IOC, IOC_alt],
+    'IOTA': [IOTA, IOTA_alt],
+    'JBS': [JBS, JBS_alt],
+    'KMD': [KMD, KMD_alt],
+    'KOBO': [KOBO, KOBO],
+    'KORE': [KORE, KORE_alt],
+    'LBC': [LBC, LBC_alt],
+    'LDOGE': [LDOGE, LDOGE_alt],
+    'LSK': [LSK, LSK_alt],
+    'LTC': [LTC, LTC_alt],
+    'MAID': [MAID, MAID_alt],
+    'MCO': [MCO, MCO_alt],
+    'MINT': [MINT, MINT_alt],
+    'MONA': [MONA, MONA_alt],
+    'MRC': [MRC, MRC],
+    'MSC': [MSC, MSC_alt],
+    'MTR': [MTR, MTR_alt],
+    'MUE': [MUE, MUE_alt],
+    'NBT': [NBT, NBT],
+    'NEO': [NEO, NEO_alt],
+    'NEOS': [NEOS, NEOS_alt],
+    'NEU': [NEU, NEU_alt],
+    'NLG': [NLG, NLG_alt],
+    'NMC': [NMC, NMC_alt],
+    'NOTE': [NOTE, NOTE_alt],
+    'NVC': [NVC, NVC_alt],
+    'NXT': [NXT, NXT_alt],
+    'OK': [OK, OK_alt],
+    'OMG': [OMG, OMG_alt],
+    'OMNI': [OMNI, OMNI_alt],
+    'OPAL': [OPAL, OPAL_alt],
+    'PART': [PART, PART_alt],
+    'PIGGY': [PIGGY, PIGGY_alt],
+    'PINK': [PINK, PINK_alt],
+    'PIVX': [PIVX, PIVX_alt],
+    'POT': [POT, POT_alt],
+    'PPC': [PPC, PPC_alt],
+    'QRK': [QRK, QRK_alt],
+    'QTUM': [QTUM, QTUM_alt],
+    'RADS': [RADS, RADS_alt],
+    'RBIES': [RBIES, RBIES_alt],
+    'RBT': [RBT, RBT_alt],
+    'RBY': [RBY, RBY_alt],
+    'RDD': [RDD, RDD_alt],
+    'REP': [REP, REP_alt],
+    'RISE': [RISE, RISE_alt],
+    'SALT': [SALT, SALT_alt],
+    'SAR': [SAR, SAR_alt],
+    'SCOT': [SCOT, SCOT_alt],
+    'SDC': [SDC, SDC_alt],
+    'SIA': [SIA, SIA_alt],
+    'SJCX': [SJCX, SJCX_alt],
+    'SLG': [SLG, SLG_alt],
+    'SLS': [SLS, SLS_alt],
+    'SNRG': [SNRG, SNRG_alt],
+    'START': [START, START_alt],
+    'STEEM': [STEEM, STEEM_alt],
+    'STR': [STR, STR_alt],
+    'STRAT': [STRAT, STRAT_alt],
+    'SWIFT': [SWIFT, SWIFT_alt],
+    'SYNC': [SYNC, SYNC_alt],
+    'SYS': [SYS, SYS_alt],
+    'TRIG': [TRIG, TRIG_alt],
+    'TX': [TX, TX_alt],
+    'UBQ': [UBQ, UBQ_alt],
+    'UNITY': [UNITY, UNITY_alt],
+    'USDT': [USDT, USDT_alt],
+    'VIOR': [VIOR, VIOR_alt],
+    'VNL': [VNL, VNL_alt],
+    'VPN': [VPN, VPN_alt],
+    'VRC': [VRC, VRC_alt],
+    'VTC': [VTC, VTC_alt],
+    'WAVES': [WAVES, WAVES_alt],
+    'XAI': [XAI, XAI_alt],
+    'XBS': [XBS, XBS_alt],
+    'XCP': [XCP, XCP_alt],
+    'XEM': [XEM, XEM_alt],
+    'XMR': [XMR, XMR],
+    'XPM': [XPM, XPM_alt],
+    'XRP': [XRP, XRP_alt],
+    'XTZ': [XTZ, XTZ_alt],
+    'XVG': [XVG, XVG_alt],
+    'XZC': [XZC, XZC_alt],
+    'YBC': [YBC, YBC_alt],
+    'ZEC': [ZEC, ZEC_alt],
+    'ZEIT': [ZEIT, ZEIT_alt],
+  };
 
-  static const IconData ADA_alt = const CryptoCoinIconData(0xE001);
-  static const IconData ADA = const CryptoCoinIconData(0xE002);
+  /// Returns the Icon for the correct Crypto, if the Icon doesn't exist it returns null
+  ///
+  /// mode = 'normal' returns normal Icon, mode = 'alt' returns the alt Icon
+  static IconData? getCryptoIcon(String key, [String? mode]) {
+    if (containsCrypto(key)) {
+      if (mode == 'alt') return _cryptoMap[key]![1];
+      return _cryptoMap[key]![0];
+    }
+    return null;
+  }
+
+  /// Returns List<String> with the crypto tags avaible in this class
+  static List<String> getCryptoNames() {
+    return _cryptoMap.keys.toList();
+  }
+
+  /// Returns bool to check if the class has a crypto inserted
+  static bool containsCrypto(String name) {
+    return _cryptoMap.containsKey(name);
+  }
+
+  static const IconData ADA = const CryptoCoinIconData(0xE001);
+  static const IconData ADA_alt = const CryptoCoinIconData(0xE002);
   static const IconData ADC_alt = const CryptoCoinIconData(0xE003);
   static const IconData ADC = const CryptoCoinIconData(0xE004);
   static const IconData AEON_alt = const CryptoCoinIconData(0xE005);
@@ -248,8 +416,8 @@ class CryptoCoinIcons {
   static const IconData UBQ = const CryptoCoinIconData(0xE0F1);
   static const IconData UNITY_alt = const CryptoCoinIconData(0xE0F2);
   static const IconData UNITY = const CryptoCoinIconData(0xE0F3);
-  static const IconData USDT_alt = const CryptoCoinIconData(0xE0F4);
-  static const IconData USDT = const CryptoCoinIconData(0xE0F5);
+  static const IconData USDT = const CryptoCoinIconData(0xE0F4);
+  static const IconData USDT_alt = const CryptoCoinIconData(0xE0F5);
   static const IconData VIOR_alt = const CryptoCoinIconData(0xE0F6);
   static const IconData VIOR = const CryptoCoinIconData(0xE0F7);
   static const IconData VNL_alt = const CryptoCoinIconData(0xE0F8);
@@ -287,4 +455,4 @@ class CryptoCoinIcons {
   static const IconData ZEC = const CryptoCoinIconData(0xE118);
   static const IconData ZEIT_alt = const CryptoCoinIconData(0xE119);
   static const IconData ZEIT = const CryptoCoinIconData(0xE11A);
-  }
+}
